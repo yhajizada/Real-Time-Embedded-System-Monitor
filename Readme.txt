@@ -26,3 +26,27 @@ In industrial environments, monitoring real-time sensor data from microcontrolle
 │   └── telemetry_data.db   # SQLite database (auto-generated)
 ├── requirements.txt        # Python dependencies
 └── README.md               # Project documentation
+
+🚀 Getting Started
+1. Hardware Setup
+Connect your microcontroller to your PC via USB.
+
+(Optional) Connect a sensor or potentiometer to the A0 Analog pin.
+
+2. Firmware Installation
+Open firmware/sensor_stream.ino in the Arduino IDE.
+
+Select your board and port, then click Upload.
+
+3. Python Environment Setup
+Install the required libraries:
+
+Bash
+pip install -r requirements.txt
+4. Running the Monitor
+Find your port (e.g., COM3 on Windows or /dev/ttyUSB0 on Linux).
+
+Run the logger:
+
+Bash
+python app/logger.py
